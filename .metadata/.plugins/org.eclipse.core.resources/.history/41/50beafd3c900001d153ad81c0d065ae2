@@ -1,0 +1,9 @@
+
+public class ArrayEx2 {
+	public static void main(String[] args) {
+		int[] i= new int[10];
+		
+		int[][] k = new int[5][10];
+		
+	}
+}
