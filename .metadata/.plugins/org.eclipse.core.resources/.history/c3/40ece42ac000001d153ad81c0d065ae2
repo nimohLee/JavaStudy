@@ -26,8 +26,13 @@ public class ClassEx {
 		System.out.println(ce3.d); // 0.0
 		System.out.println(ce3.b); // false
 		System.out.println(ce3.str); // null
-		System.out.println(ce3.str == null);
 		
+		System.out.println(ce3.str == null);
+	
 	}
 	
+	
+	
+	
+
 }
