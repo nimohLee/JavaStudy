@@ -1,0 +1,26 @@
+
+public class VariableEx {
+
+	public static void main(String[] args) {
+
+			int i=0;
+			int j=0;
+			System.out.println(i==j);
+			
+			String str1 = "안녕";
+			
+			String str2 = new String("안녕");
+			
+			System.out.println(str1 + ":" + str2);
+			System.out.println(str1==str2);
+			
+			
+			String str3 = str2;//str2의 값을 str3에 넣은 게 아닌 주소를 복사해줬기 때문에 true
+			System.out.println(str2 ==str3);
+	
+			String str4 = "안녕";
+			System.out.println(str1 ==str4);
+	
+	}
+	
+}

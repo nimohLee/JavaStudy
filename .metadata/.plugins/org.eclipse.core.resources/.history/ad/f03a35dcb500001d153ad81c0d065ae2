@@ -1,0 +1,20 @@
+
+public class VariableEx {
+
+	public static void main(String[] args) {
+
+			int i=0;
+			int j=0;
+			System.out.println(i==j);
+			
+			String str1 = "¾È³ç";
+			
+			String str2 = new String("¾È³ç");
+			System.out.println(str1 + ":" + str2);
+			System.out.println(str1==str2);
+			
+			String str3 = str2;
+			System.out.println(str2 ==str3);
+	}
+	
+}
