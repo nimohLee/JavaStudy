@@ -1,7 +1,9 @@
 package Human;
 
 public class Human {
-		String arm;
-		String legs;
-		String head;
+		String name;
+		String height;
+		String weight;
+		int age;
+		
 }

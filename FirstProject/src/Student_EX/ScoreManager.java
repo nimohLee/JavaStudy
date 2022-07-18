@@ -1,6 +1,5 @@
 package Student_EX;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ScoreManager {
