@@ -1,4 +1,4 @@
-package Constructor;
+package Method;
 
 public class MethodEx2 {
 	int x;

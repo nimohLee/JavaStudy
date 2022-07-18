@@ -1,4 +1,4 @@
-package Constructor;
+package Method;
 public class MethodEx1 {
    
    MethodEx1() {// 이름이 클래스와 대소문자까지 같다 = 생성자

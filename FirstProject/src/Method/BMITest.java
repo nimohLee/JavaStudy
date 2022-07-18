@@ -1,4 +1,4 @@
-package Constructor;
+package Method;
 
 class BMI {
 
