@@ -5,21 +5,16 @@ public class Product {
 	private int price;
 	private double weight;
 	private String stockPrint;
-	private boolean stock;
+	private int stock;
 	
 
 	
-	public Product(String pName,int pPrice, double pWeight, boolean pStock){
+	public Product(String pName,int pPrice, double pWeight, int pStock){
 		name = pName;
 		price = pPrice;
 		weight = pWeight;
-		if(pStock == true) {
-		stockPrint = "O";
 		stock = pStock;
-		}
-		else {
-			stockPrint = "X";
-			stock = pStock;}
+		
 	}
 	
 	String getProductName() {
@@ -30,12 +25,20 @@ public class Product {
 		return price;
 	}
 	
-	boolean getStock() {
+	int getStock() {
 		return stock;
 	}
 	
+	void plusStock() {
+		stock++;
+	}
+	
+	void minusStock() {
+		stock--;
+	}
+	
 	void printProduct() {
-		System.out.println("제품명 :"+name+"\n가격 :"+price+"\n무게 :"+weight+"\n재고 :"+stock);
+		System.out.println("제품명 :"+name+"\n가격 :"+price+"\n무게 :"+weight+"\n재고 :"+stockPrint);
 	}
 	
 	

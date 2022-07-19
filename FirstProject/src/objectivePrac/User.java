@@ -16,6 +16,18 @@ public class User {
 		uNumber = number;
 	}
 	
+	void setUserName(String name) {
+		uName = name;
+	}
+	
+	void setUserID(String id) {
+		uID = id;
+	}
+	
+	void setUserAddr(String address) {
+		uAddress = address;
+	}
+	
 	String getUserName() {
 		return uName;
 	}

@@ -1,7 +1,0 @@
-package Human;
-
-public class Human1 {
-		String arm;
-		String legs;
-		String head;
-}

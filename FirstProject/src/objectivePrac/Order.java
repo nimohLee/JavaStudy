@@ -14,7 +14,6 @@ public class Order {
 		productName = p.getProductName();
 		userName = u.getUserName();
 		price= p.getPrice();
-		isStock = p.getStock();
 		many=  m;
 	}
 	
@@ -33,8 +32,8 @@ public class Order {
 		User u2 = new User("yujin", "정유진", "부산", "01026412224");
 		
 		// Product p1,p2 인스턴스화
-		Product p1 = new Product("SSD",70000,2.1,true);
-		Product p2 = new Product("레쓰비",1000,0.2,false);
+		Product p1 = new Product("SSD",70000,2.1,1);
+		Product p2 = new Product("레쓰비",1000,0.2,4);
 		
 		// Order o1,o2 인스턴스화
 		Order o1 = new Order(u1,p1,1);
@@ -65,22 +64,16 @@ public class Order {
 		System.out.println("===========================전체 주문 정보=============================");
 		System.out.println();
 		
-		if(o1.isStock)
+		
 		System.out.println("\""+o1.getUserName()+"\" 사용자가 구매한 제품은 "+"\""+o1.getItem()+"\"이며, 가격은 총 "+(o1.price*o1.many)+"원, 개수는 "+o1.many+"개 입니다.");
-		else {
-			System.out.println("\""+o1.getUserName()+"\" 사용자가 구매한 제품은 "+"\""+o1.getItem()+"\"이며, 가격은 총 "+(o1.price*o1.many)+"원, 개수는 "+o1.many+"개 입니다.");
-			System.out.println("----------------------'"+o2.getItem()+"'재고 없음------------------------");
-		}
+		
 		System.out.println();
 		System.out.println("..................................................................");
 		System.out.println();
 		
-		if(o2.isStock)
+		
 		System.out.println("\""+o2.getUserName()+"\" 사용자가 구매한 제품은 "+"\""+o2.getItem()+"\"이며, 가격은 총 "+(o2.price*o2.many)+"원, 개수는 "+o2.many+"개 입니다.");
-		else {
-			System.out.println("\""+o2.getUserName()+"\" 사용자가 구매한 제품은 "+"\""+o2.getItem()+"\"이며, 가격은 총 "+(o2.price*o2.many)+"원, 개수는 "+o2.many+"개 입니다.");
-			System.out.println("----------------------'"+o2.getItem()+"'재고 없음------------------------");
-		}
+		
 		
 		System.out.println();
 		System.out.println("==================================================================");
