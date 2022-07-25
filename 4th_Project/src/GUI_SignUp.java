@@ -34,7 +34,7 @@ public static void main(String[] args) {
 	// centerPnl을 2열로 나타내기 위한 GridLayout 설정
 	centerPnl.setLayout(new GridLayout(0,2));
 	
-	// 화면에서 사용되는 컴포넌트들 모두 생성
+	// 화면 에서 사용되는 컴포넌트들 모두 생성
 	// 컴포넌트란 화면에 구성된 각각의 요소들을 말함 ex) 텍스트 라벨, 텍스트 필드, 버튼, 패널, 라디오 버튼 등등
 	JLabel lblSign = new JLabel("회원가입");
 	
