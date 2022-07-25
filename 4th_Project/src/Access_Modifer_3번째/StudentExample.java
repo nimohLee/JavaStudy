@@ -1,3 +1,4 @@
+package Access_Modifer_3번째;
 class People {
 	public String name;
 	public String ssn; // 주민등록번호

@@ -1,3 +1,4 @@
+package ExtendsExs_2¹øÂ°;
 class Ext1{
 	int x;
 	int y;

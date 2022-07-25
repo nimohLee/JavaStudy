@@ -1,3 +1,4 @@
+package GUIEx_1번째;
 import javax.swing.JButton; // javax 프로젝트에 swing 패키지에 JButton 클래스를 가져옴
 import javax.swing.JFrame; // javax 프로젝트에 swing 패키지에 JButton 클래스를 가져옴
 

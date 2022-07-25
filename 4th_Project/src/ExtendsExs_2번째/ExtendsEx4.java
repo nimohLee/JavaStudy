@@ -1,3 +1,4 @@
+package ExtendsExs_2번째;
 class Ext4{
 	public Ext4() {
 		System.out.println("Ext4의 생성자 실행");

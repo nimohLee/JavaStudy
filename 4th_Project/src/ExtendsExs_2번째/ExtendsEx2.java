@@ -1,3 +1,4 @@
+package ExtendsExs_2번째;
 import javax.swing.JFrame;
 
 public class ExtendsEx2 extends JFrame{ // 앞에서 배운 GUI JFrame을 상속

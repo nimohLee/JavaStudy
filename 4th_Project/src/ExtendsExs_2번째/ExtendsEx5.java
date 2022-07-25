@@ -1,6 +1,7 @@
+package ExtendsExs_2번째;
 // final class Ext5{	:  class 앞에 final이 붙으면 상수화가 되어 더이상 변경이 불가능하다 = 상속이 불가능하다
 class Ext5{
-	public void printExt5() {
+	public void printExt5() { // 반환형 앞에 final도 마찬가지로 변경 or 오버라이딩 불가능 ( why? final은 말 그대로 최종본. 손댈 수가 없음)
 		System.out.println("이것은 Ext5");
 	}
 }
@@ -19,7 +20,7 @@ public class ExtendsEx5 extends Ext5{ // Ext5를 상속받은 ExtendsEx5
 	
 	
 	public static void main(String[] args) {
-		// 오버라이드된 메서드의 경우 main에서 사용가능하지만
+		// 오버라이드된 메서드의 경우 main에서 사용가능하지만 
 		// 부모 메서드는 일반적인 방식으로 main 메서드에서 사용이 불가
 		ExtendsEx5 ee5 = new ExtendsEx5();
 		
