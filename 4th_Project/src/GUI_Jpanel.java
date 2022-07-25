@@ -28,6 +28,8 @@ public static void main(String[] args) {
 	// f(JFrame)가 아닌 p(JPanel)에 버튼을 붙여서 버튼이 붙은 JPanel을 JFrame에 붙임
 	// btn -> JPanel -> JFrame
 	
+	
+	// 버튼을 JPanel에 붙임
 	p1.add(btn1);
 	p1.add(btn2);
 	p1.add(btn3);
@@ -39,6 +41,8 @@ public static void main(String[] args) {
 	p2.add(btn8);
 
 	f.setSize(300,300);
+	
+	// JPanel을 JFrame에 붙임
 	f.add(p1);
 	f.add(p2);
 	f.setVisible(true);
