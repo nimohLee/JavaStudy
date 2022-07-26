@@ -5,7 +5,7 @@ import java.awt.FlowLayout;
 
 import javax.swing.JFrame;
 
-class MFrame extends JFrame{
+public class MFrame extends JFrame{
 	final static int BORDER_LAYOUT=0;	
 	final static int FLOW_LAYOUT=1;
 	
