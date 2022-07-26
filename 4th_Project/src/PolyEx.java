@@ -1,8 +1,10 @@
 import java.awt.Color;
+import java.awt.Component;
 import java.awt.GridLayout;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 class AButton extends JButton{
 	public AButton() { // <-- 생성자
@@ -34,10 +36,23 @@ public class PolyEx extends JFrame{ // 클래스 안에는 메서드와 필드(변수) 밖에 없
 	public PolyEx() {  // 	<-- 생성자
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setSize(500,500);
+	
+		JPanel jp = new JPanel();
+		AButton a = new AButton(); // <-- 생성자 호출 ( AButton 객체의 생성 )
+		BButton b = new BButton(); // <-- 생성자 호출 ( BButton 객체의 생성 )
+		CButton c = new CButton(); // <-- 생성자 호출 ( CButton 객체의 생성 )
+	
 		
+		this.setLayout(new GridLayout());
+		
+		this.addButton(a);
+		this.addButton(b);
+		this.addButton(c);
+		
+		this.setVisible(true);
 	}
 	
-	public void addButton(JButton btn) { // <-- 메서드 - 매개변수는 JButton인데 AButton, BButton, CButton 클래스가 들어감.
+	public void addButton(Component btn) { // <-- 메서드 - 매개변수는 JButton인데 AButton, BButton, CButton 클래스가 들어감.
 										 // 		     이 경우 자식 클래스가 부모 클래스로 타입 자동변환됨.
 		this.add(btn);
 	}
@@ -45,20 +60,9 @@ public class PolyEx extends JFrame{ // 클래스 안에는 메서드와 필드(변수) 밖에 없
 
 	public static void main(String[] args) {
 		
-		PolyEx p = new PolyEx(); // <-- 생성자 호출 ( PolyEx 객체의 생성 )
+		new PolyEx(); // <-- 생성자 호출 ( PolyEx 객체의 생성 )
 		
-		AButton a = new AButton(); // <-- 생성자 호출 ( AButton 객체의 생성 )
-		BButton b = new BButton(); // <-- 생성자 호출 ( BButton 객체의 생성 )
-		CButton c = new CButton(); // <-- 생성자 호출 ( CButton 객체의 생성 )
-	
 		
-		p.setLayout(new GridLayout());
-		
-		p.addButton(a);
-		p.addButton(b);
-		p.addButton(c);
-		
-		p.setVisible(true);
 		
 	}
 	
